@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="PC, 모바일, 콘솔 플랫폼을 아우르는 다양한 장르의 게임을 개발하는 게임 개발사입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="넥슨게임즈">
+  <meta property="og:url" content="https://www.nexongames.co.kr">
+  <meta property="og:image" content="이미지">
+  <meta property="og:description" content="넥슨게임즈">
+  <title>넥슨게임즈</title>
+  <link id="favicon" rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/subway_og.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/common.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" href="css/layout.css?v=<?php echo time(); ?>">
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/ui_common.js?v=<?php echo time(); ?>"></script>
+</head>
+<body>
+  <div id="skip_navi">
+    <a href="#container">본문바로가기</a>
+  </div>
+  <div id="wrap">
+    <header id="header">
+      <h1 class="logo"><a href="index.html"><img src="images/main_logo.png" alt="넥슨게임즈"></a></h1>
+      <nav class="gnb_wrap">
+        <ul class="gnb">
+          <li>
+            <a href="#">넥슨게임즈</a>
+            <ul class="depth02">
+              <li>
+                <a href="/nexongames/nexongames.php">넥슨게임즈</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">게임</a>
+            <ul class="depth02">
+              <li><a href="/game/v4.php">V4</a></li>
+              <li><a href="/game/sudden_attack.php">서든어택</a></li>
+              <li><a href="/game/blue_archive.php">블루 아카이브</a></li>
+              <li><a href="/game/hit2.php">히트2</a></li>
+              <li><a href="/game/veiled_experts.php">베일드 엑스퍼트</a></li>
+              <li><a href="/game/first_descendant.php">퍼스트 디센던트</a></li>
+              <li><a href="/game/godsome.php">갓썸</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">인재채용</a>
+            <ul class="depth02">
+              <li><a href="/adopt/culture.php">기업문화</a></li>
+              <li><a href="/bbs/board.php?bo_table=people">피플&amp;컬처</a></li>
+              <li><a href="/adopt/hire.php">복지</a></li>
+              <li><a href="/adopt/job.php">채용</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">투자정보</a>
+            <ul class="depth02">
+              <li><a href="/bbs/content.php?co_id=str">기업지배구조</a></li>
+              <li><a href="/sub/stockPrice.php">주가정보</a></li>
+              <li><a href="/bbs/content.php?co_id=finance">재무정보</a></li>
+              <li><a href="/sub/announcement.php">공시/공고</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">미디어</a>
+            <ul class="depth02">
+              <li><a href="/bbs/board.php?bo_table=news">뉴스</a></li>
+              <li><a href="/bbs/board.php?bo_table=media_event">보도자료</a></li>
+              <li><a href="/bbs/board.php?bo_table=multimedia">멀티미디어</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <ul class="lang">
+        <li><a class="active" href="#">KOR</a></li>
+        <li><a href="#">ENG</a></li>
+      </ul>
+      <a class="btn_open" href="#">
+        <span class="blind">메뉴닫기</span>
+        <i class="fa fa-bars"></i></a>
+      <aside class="m_gnb_area">
+        <div class="lang_wrap">
+          <ul class="lang">
+            <li><a class="active" href="#">KOR</a></li>
+            <li><a href="#">ENG</a></li>
+          </ul>
+          <button class="btn_close" type="button">
+            <span class="blind">메뉴닫기</span>
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="m_gnb_wrap">
+          <ul class="m_gnb">
+            <li>
+              <a href="#">넥슨게임즈</a>
+              <ul class="depth02">
+                <li>
+                  <a href="/nexongames/nexongames.php">넥슨게임즈</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">게임</a>
+              <ul class="depth02">
+                <li><a href="/game/v4.php">V4</a></li>
+                <li><a href="/game/sudden_attack.php">서든어택</a></li>
+                <li><a href="/game/blue_archive.php">블루 아카이브</a></li>
+                <li><a href="/game/hit2.php">히트2</a></li>
+                <li><a href="/game/veiled_experts.php">베일드 엑스퍼트</a></li>
+                <li><a href="/game/first_descendant.php">퍼스트 디센던트</a></li>
+                <li><a href="/game/godsome.php">갓썸</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">인재채용</a>
+              <ul class="depth02">
+                <li><a href="/adopt/culture.php">기업문화</a></li>
+                <li><a href="/bbs/board.php?bo_table=people">피플&amp;컬처</a></li>
+                <li><a href="/adopt/hire.php">복지</a></li>
+                <li><a href="/adopt/job.php">채용</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">투자정보</a>
+              <ul class="depth02">
+                <li><a href="/bbs/content.php?co_id=str">기업지배구조</a></li>
+                <li><a href="/sub/stockPrice.php">주가정보</a></li>
+                <li><a href="/bbs/content.php?co_id=finance">재무정보</a></li>
+                <li><a href="/sub/announcement.php">공시/공고</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">미디어</a>
+              <ul class="depth02">
+                <li><a href="/bbs/board.php?bo_table=news">뉴스</a></li>
+                <li><a href="/bbs/board.php?bo_table=media_event">보도자료</a></li>
+                <li><a href="/bbs/board.php?bo_table=multimedia">멀티미디어</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="m_lang">
+            <li><a class="active" href="#">KOR</a></li>
+            <li><a href="#">ENG</a></li>
+          </ul>
+        </div>
+      </aside>
+      <div class="dimmed"></div>
+    </header>
+    <div id="container">
+      <section class="main_slider_wrap">
+        <h2 class="blind">게임소개비디오</h2>
+        <div class="swiper-container main_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <video src="videos/Hit2.mp4" autoplay muted playsinline></video>
+            </div>
+            <div class="swiper-slide">
+              <video src="videos/ProjectD.mp4" autoplay muted playsinline></video>
+            </div>
+            <div class="swiper-slide">
+              <video src="videos/BlueArchive.mp4" autoplay muted playsinline></video>
+            </div>
+            <div class="swiper-slide">
+              <video src="videos/ProjectMagnum.mp4" autoplay muted playsinline></video>
+            </div>
+          </div>
+          <div class="inner">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="num_wrap">
+              <em class="current">01</em> / <span class="total">00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main_intro">
+        <div class="inner">
+          <div class="tit_wrap">
+            <p>We Make Games Better</p>
+            <h2>NEXON GAMES</h2>
+          </div>
+          <div class="intro">
+            <div class="txt_wrap">
+              <p>우리는 더 좋은 게임(Better Game)을<br>
+                만들고 세상에 보여주기 위해 모였습니다.</p>
+              <p>유저가 더 즐겁게 게임을 즐길 수 있도록,<br>
+                세상보다 먼저 한 발자국 더 나아갑니다.</p>
+              <p>넥슨게임즈의 방식으로<br>
+                더 좋은 게임을 만듭니다.</p>
+            </div>
+            <div class="img_wrap">
+              <!-- 시각적인 이미지는 alt필요없음 (a나 정보가 있다면 넣어야함) -->
+              <img src="images/main_mid_img_01_new.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main_interview">
+        <div class="inner">
+          <h2 class="main_tit">Who we are</h2>
+          <div class="swiper-container interview_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img_wrap">
+                  <img src="images/yoon.png" alt="">
+                </div>
+                <div class="txt_area">
+                  <em class="interview">Interviewee.</em>
+                  <p class="team"><strong class="name">윤진홍 님</strong>아트실 캐릭터팀</p>
+                  <div class="txt_wrap">
+                    <p class="tit">“제안하고 논의하며 성장합니다.”</p>
+                    <p class="txt">우리는 같은 장르, 전형적인 룰로 게임을 만들지 않아요.<br>
+                      타 장르의 재미요소와 게임 외 재미들을 융합해 새로운 재미를 만듭니다.<br>
+                      제 아이디어가 개발로 이어지기도, 이어지지 않기도 하지만,<br>
+                      뛰어난 동료들과 함께 논의하는 과정에서 매일 한 걸음 씩 더 성장함을 느껴요.
+                      </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_wrap">
+                  <img src="images/jo.png" alt="">
+                </div>
+                <div class="txt_area">
+                  <em class="interview">Interviewee.</em>
+                  <p class="team"><strong class="name">조정위 님</strong>매그넘스튜디오 아트실</p>
+                  <div class="txt_wrap">
+                    <p class="tit">“믿고 갈 수 있습니다.”</p>
+                    <p class="txt">넥슨게임즈는 신규 프로젝트들을 신중히 시작하고,<br>
+                      한번 시작하면 필요한 지원을 아끼지 않아요.<br> 
+                      이후 과정에 시행착오가 있더라도 중단하지 않고 최선을 다할 것이라는 믿음이 있습니다.<br>
+                      개발자 한 명 한 명의 커리어를 소중히 여기는 회사에 대한 믿음으로<br>
+                      개발에만 더욱 몰입할 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_wrap">
+                  <img src="images/kim.png" alt="">
+                </div>
+                <div class="txt_area">
+                  <em class="interview">Interviewee.</em>
+                  <p class="team"><strong class="name">김다란 님</strong>MH스튜디오 해외개발실 관리팀</p>
+                  <div class="txt_wrap">
+                    <p class="tit">“함께 만들어 나가고 있습니다.”</p>
+                    <p class="txt">넥슨게임즈는 실무자의 의견과 제안을 적극적으로 수렴합니다.<br>
+                      전사의 업무용 메신저를 선택할 때도 실무 리더인 PM들이 모여
+                      <br>논의하고 결정했던 경험이 기억에 남아요.<br>
+                      회사가 구성원들을 깊이 존중함을 느꼈던 경험입니다.<br>
+                      우리는 함께 회사를 만든다는 자부심으로 일합니다.
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn_wrap">
+              <div class="swiper-button-prev btn_arrow">prev</div>
+              <div class="swiper-button-next btn_arrow">next</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main_news">
+        <div class="inner">
+          <h2 class="main_tit">News</h2>
+          <ul class="news">
+            <li>
+              <a href="#" target="_blank" title="새창열림">
+                <div class="img_wrap">
+                  <img src="images/thumb-480c59bcdf3c73ccf8260a297cc3ac7b_1670813993_05_360x278.jpg" alt="게시물제목">
+                </div>
+                <div class="txt_wrap">
+                  <div class="txt_top">
+                    <strong class="category">베일드 엑스퍼트</strong>
+                    <span class="date">2022.12.12</span>
+                  </div>
+                  <p class="tit">게임한류 이어갈 국내 게임사들, 글로벌에서 신작 테스트 집중</p>
+                  <p class="txt">국내 게임업체가 글로벌 신작 테스트에 집중하고 있다. 정식 출시에 앞서 다양한 문화권에 속한 유저의 반응과 피드백을 얻기 위한 준비에 착수한 것이다.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" title="새창열림">
+                <div class="img_wrap">
+                  <img src="images/20221116500368.jpg" alt="게시물제목">
+                </div>
+                <div class="txt_wrap">
+                  <div class="txt_top">
+                    <strong class="category">넥슨게임즈</strong>
+                    <span class="date">2022.12.09</span>
+                  </div>
+                  <p class="tit">2022년은 '넥슨의 해'⋯ '10관왕' 등극하며 연말 시상식 싹쓸이한 배경은</p>
+                  <p class="txt">넥슨이 망외의 성과를 올린 배경에는 개발자회사 '넥슨게임즈'의 활약이 절대적이었다. 넥슨게임즈는 딱 1년 전이었던 작년 이맘때 넥슨 자회사 넷게임즈와 넥슨지티가 합병해 만들어진 회사로, 출시작 불패 신화의 주인공 박용현 대표가 선장을 맡은 게임 개발사다. 박 대표가 이끈 넥슨게임즈는 대한민국 게임대상에서 기술·창작상 캐릭터 부문을 비롯해 우수개발자(김용하 총괄 PD) 상 등을 석권했다.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" title="새창열림">
+                <div class="img_wrap">
+                  <img src="images/thumb-400f3d3fd31700fcb082a3f737873f29_1670379267_01_360x278.jpg" alt="게시물제목">
+                </div>
+                <div class="txt_wrap">
+                  <div class="txt_top">
+                    <strong class="category">퍼스트 디센던트</strong>
+                    <span class="date">2022.12.07</span>
+                  </div>
+                  <p class="tit">[기획]넥슨, 슈터 ‘퍼스트 디센던트’ 앞세워 서구권 공략 본격화</p>
+                  <p class="txt">넥슨이 자회사 넥슨게임즈의 루트슈터 신작 ‘퍼스트 디센던트’로 서구 시장 본격 공략에 나선다.6일 넥슨에 따르면 ‘퍼스트 디센던트’는 3인칭 슈팅 전투와 RPG가 결합된 루트슈터 장르 신작으로 언리얼 엔진5로 구현한 고퀄리티 비주얼, 스펙터클한 4인 코옵 슈팅 액션, 지속 가능한 RPG를 핵심가치로 개발중인 글로벌 트리플 A급 게임이다.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <a class="btn_more" href="#">more</a>
+        </div>
+      </section>
+      <section class="main_careers">
+        <div class="inner">
+          <h2 class="main_tit">Careers</h2>
+          <div class="img_wrap">
+            <img src="images/careers_visual.jpg" alt="">
+            <div class="txt_wrap">
+              <p>새로운 재미, 교류와 공감의 세계를 창조할<br>
+                게이머들과 함께하고 싶습니다.</p>
+            </div>
+          </div>
+          <a class="btn_more" href="#">지원하기</a>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+      <div class="footer_top">
+        <div class="footer_info">
+          <h2 class="logo">
+            <a href="index.html"><img src="images/footer_logo.png" alt="넥슨게임즈"></a>
+          </h2>
+          <!-- dl 안쪽 dt, dd는 반드시 1개 이상 포함되어야 함 -->
+          <dl class="address">
+            <dt>넥슨게임즈 SEOUL</dt>
+            <dd>서울특별시 강남구 남부순환로 2621 디앤오 강남빌딩 5층</dd>
+          </dl>
+          <dl class="address">
+            <dt>넥슨게임즈 PANGYO</dt>
+            <dd>경기 성남시 분당구 판교로 256번길 25 판교 테크노벨리</dd>
+          </dl>
+          <a class="awards" href="#" target="_blank" title="새창열림"><img src="images/winner_logo.jpg" alt="GDWEB DESIGN AWARDS"></a>
+        </div>
+        <ul class="sitemap">
+          <li>
+            <a href="#">넥슨게임즈</a>
+            <ul class="depth02">
+              <li>
+                <a href="/nexongames/nexongames.php">넥슨게임즈</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">게임</a>
+            <ul class="depth02">
+              <li><a href="/game/v4.php">V4</a></li>
+              <li><a href="/game/sudden_attack.php">서든어택</a></li>
+              <li><a href="/game/blue_archive.php">블루 아카이브</a></li>
+              <li><a href="/game/hit2.php">히트2</a></li>
+              <li><a href="/game/veiled_experts.php">베일드 엑스퍼트</a></li>
+              <li><a href="/game/first_descendant.php">퍼스트 디센던트</a></li>
+              <li><a href="/game/godsome.php">갓썸</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">인재채용</a>
+            <ul class="depth02">
+              <li><a href="/adopt/culture.php">기업문화</a></li>
+              <li><a href="/bbs/board.php?bo_table=people">피플&amp;컬처</a></li>
+              <li><a href="/adopt/hire.php">복지</a></li>
+              <li><a href="/adopt/job.php">채용</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">투자정보</a>
+            <ul class="depth02">
+              <li><a href="/bbs/content.php?co_id=str">기업지배구조</a></li>
+              <li><a href="/sub/stockPrice.php">주가정보</a></li>
+              <li><a href="/bbs/content.php?co_id=finance">재무정보</a></li>
+              <li><a href="/sub/announcement.php">공시/공고</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">미디어</a>
+            <ul class="depth02">
+              <li><a href="/bbs/board.php?bo_table=news">뉴스</a></li>
+              <li><a href="/bbs/board.php?bo_table=media_event">보도자료</a></li>
+              <li><a href="/bbs/board.php?bo_table=multimedia">멀티미디어</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_bottom">
+        <div class="inner">
+          <p class="copyright">ⓒ Nexon Games. All Rights Reserved.</p>
+          <div class="family_wrap">
+            <button class="btn_family" type="button">관련사이트</button>
+            <ul class="family">
+              <li><a href="http://company.nexon.com/" target="_blank">넥슨코리아</a></li>
+              <li><a href="https://www.nexon-networks.com/" target="_blank">넥슨네트웍스</a></li>
+              <li><a href="https://www.neople.co.kr" target="_blank">네오플</a></li>
+              <li><a href="http://www.nexon-communications.com/" target="_blank">넥슨커뮤니케이션즈</a></li>
+              <li><a href="http://www.nmp-corp.com/" target="_blank">엔미디어플랫폼</a></li>
+              <li><a href="https://company.nexon.com/" target="_blank">넥슨스페이스</a></li>
+            </ul>
+					</div>
+        </div>
+      </div>
+      <div class="top_wrap">
+        <a class="btn_top" href="#">TOP</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
